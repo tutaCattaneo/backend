@@ -1,0 +1,29 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "joaquin altuna",
+    "age" : "23",
+    "email": "joaquinaltuna@gmail.com"
+}
+
+###
+
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/63e3a152a143f06fe24f1017 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/63e3a152a143f06fe24f1017 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Matias pinga larga cattaneo",
+    "age" : "23",
+    "email": "joaquinaltuna@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/users/63e3a152a143f06fe24f1017 HTTP/1.1
